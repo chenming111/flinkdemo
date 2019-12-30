@@ -10,7 +10,7 @@ object SocketWindowWordCountScala {
     // the host and the port to connect to
     var hostname: String = "localhost"
     var port: Int = 0
-    //通过args传递hostname  port;   program arguments中设置 --hostname 10.10.10.16 --port 9999
+    //通过args传递hostname  port;  本地测试可以在 program arguments中设置 --hostname 10.10.10.16 --port 9999
     try {
       val params = ParameterTool.fromArgs(args)
       hostname = if (params.has("hostname")) params.get("hostname") else "localhost"
