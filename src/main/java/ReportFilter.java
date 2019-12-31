@@ -73,11 +73,13 @@ public class ReportFilter {
 
 
 
-       /* final StreamingFileSink<String> sink = StreamingFileSink
+        final StreamingFileSink<String> sink = StreamingFileSink
                .forRowFormat(new Path("hdfs://10.10.10.16:8020/test_origin_data/report"), new SimpleStringEncoder<String>("UTF-8"))
                 .build();
 
-        filterinformation.addSink(sink);*/
+
+
+        filterinformation.addSink(sink);
 
 
        //  filterinformation.writeAsText("C:\\Users\\chenming\\Desktop\\"+new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
